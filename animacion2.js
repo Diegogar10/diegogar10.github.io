@@ -1,12 +1,26 @@
 $(document).ready(function(e) {
 	var flag=false;
-    $("#barranavegacion input").click(function(e) {
+    $("#nav").click(function(e) {
         //console.log();
 		if(!flag){
-			$(this).css({"font-size":"40px","margin-top":"+=4","border-color":"none"}).val("x").blur();
+			$(this).css({"font-size":"40px","border-color":"none"}).val("x").blur().animate({
+			
+				top:"80px",
+			
+			},750,function(){//funcion anidada
+				
+				//$(".animacion h2").fadeIn(1000).delay(1000).fadeOut(1000);
+				});
 			deslizaBarra(true);
 		}else{
-			$(this).css({"font-size":"48px","margin-top":"-=4"}).val("=").blur();
+			$(this).css({"font-size":"48px"}).val("=").blur().animate({
+			
+				top:"-10px",
+			
+			},500,function(){//funcion anidada
+				
+				//$(".animacion h2").fadeIn(1000).delay(1000).fadeOut(1000);
+				});
 			deslizaBarra(false);
 			}
 		flag=!flag;

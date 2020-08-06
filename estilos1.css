@@ -50,9 +50,10 @@ h2{
 	font-family:"miletra";
 	}
 
-#barranavegacion input{
+#nav{
+	position:absolute;
 	background:none;
-	margin-top:130px;
+	top:-10px;
 	border:0px;
 	color:#0FF;
 	font:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
@@ -60,11 +61,20 @@ h2{
 	width:100px;
 	padding:0px;
 	}
-#barranavegacion input:hover{
+#nav:hover{
 	text-shadow:#0F6 0px 0px 5px ;
 	cursor:pointer;
 	}
+
+#barranavegacion a{
+	margin:60px 50px 20px 50px;
+	display:block;
+	background:#0F3;
 	
+	}
+#barranavegacion li{
+	float:left;
+	}
 
 #principal{
 	margin: 0px;
