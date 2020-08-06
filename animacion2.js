@@ -19,16 +19,16 @@ function deslizaBarra(flag){
 			
 				marginTop:"-50px",
 			
-			},1500,function(){//funcion anidada
+			},750,function(){//funcion anidada
 				
 				//$(".animacion h2").fadeIn(1000).delay(1000).fadeOut(1000);
 				});
 	}else{
 		$("#barranavegacion").animate({
 			
-				marginTop:"-315px",
+				marginTop:"-140px",
 			
-			},1000,function(){//funcion anidada
+			},500,function(){//funcion anidada
 				
 				//$(".animacion h2").fadeIn(1000).delay(1000).fadeOut(1000);
 				});
