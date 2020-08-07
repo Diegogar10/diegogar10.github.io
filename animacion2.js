@@ -15,7 +15,7 @@ $(document).ready(function(e) {
 		}else{
 			$(this).css({"font-size":"48px"}).val("=").blur().animate({
 			
-				top:"-10px",
+				top:"-12px",
 			
 			},500,function(){//funcion anidada
 				
@@ -40,7 +40,7 @@ function deslizaBarra(flag){
 	}else{
 		$("#barranavegacion").animate({
 			
-				marginTop:"-140px",
+				marginTop:"-145px",
 			
 			},500,function(){//funcion anidada
 				
