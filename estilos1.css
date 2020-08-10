@@ -75,17 +75,27 @@ h2{
 	font-family:"miletra";
 	margin-top:20px;
 	display:block;
-	background:#0F3;
 	text-align:center;
 	text-decoration:none;
 	padding:20%;
-	border-radius:5px;
 	}
 #barranavegacion a:hover{
 	background:#0FC;
 	margin-top:15px;
 	padding:25%;
 	}
+#barranavegacion .boton1{
+	border-radius: 5px 20px 5px 10px;
+}
+#barranavegacion .boton2{
+	border-radius: 5px 10px 5px 20px;;
+}
+#barranavegacion .boton3{
+	border-radius: 5px 10px;
+}
+#barranavegacion .boton1,.boton2,.boton3{
+background-image: url(Recursos/1x/Recurso\ 4.png);
+}
 #barranavegacion li{
 	float:left;
 	width:23%;
