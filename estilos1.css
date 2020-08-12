@@ -26,7 +26,8 @@ body{
 	display:block;
 
 	}
-	
+
+
 #barranavegacion{
 	margin-top:-145px;
 	background:rgba(1,35,60,0.8);
@@ -71,18 +72,12 @@ h2{
 	height:auto;
 	}
 
-#barranavegacion a{
+#barranavegacion #contenedor1{
 	font-family:"miletra";
-	margin-top:20px;
 	display:block;
 	text-align:center;
 	text-decoration:none;
 	padding:20%;
-	}
-#barranavegacion a:hover{
-	background:#0FC;
-	margin-top:15px;
-	padding:25%;
 	}
 #barranavegacion .boton1{
 	border-radius: 5px 20px 5px 10px;
