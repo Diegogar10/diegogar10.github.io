@@ -69,6 +69,7 @@ h2{
 	width: 50%;
 	float: left;
 	
+<<<<<<< HEAD
 	}	
 #secNav1, #secNav2{
 	margin:0px;
@@ -82,6 +83,22 @@ h2{
 #secNav2{
 	float: left;
 	margin-left: 15%;
+=======
+#secNav1, #secNav2{
+	margin:0px;
+	margin-top:65px;
+	width:350px;
+	height:auto;
+	background-color: #0F6;
+	}
+#secNav1{
+	float: left;
+	margin-left:10%;
+}
+#secNav2{
+	float: right;
+	margin-right: 10%;
+>>>>>>> f1994dbcbf55c67c6aae2b473530accc80de2d80
 }
 #barranavegacion a{
 	font-family:"miletra";
