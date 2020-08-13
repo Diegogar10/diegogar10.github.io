@@ -63,21 +63,25 @@ h2{
 	text-shadow:#0F6 0px 0px 5px ;
 	cursor:pointer;
 	}
+.contshare{
+	margin: 0px;
+	margin-top:65px;
+	width: 50%;
+	float: left;
 	
+	}	
 #secNav1, #secNav2{
 	margin:0px;
-	margin-top:65px;
 	width:350px;
 	height:auto;
-	background-color: #0F6;
-	}
+}
 #secNav1{
-	float: left;
-	margin-left:10%;
+	float: right;
+	margin-right:15%;
 }
 #secNav2{
-	float: right;
-	margin-right: 10%;
+	float: left;
+	margin-left: 15%;
 }
 #barranavegacion a{
 	font-family:"miletra";
