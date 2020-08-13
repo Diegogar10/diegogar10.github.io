@@ -64,13 +64,21 @@ h2{
 	cursor:pointer;
 	}
 	
-.secNav{
-	float:left;
-	margin:0 10%;
-	margin-top:50px;
-	width:400px;
+#secNav1, #secNav2{
+	margin:0px;
+	margin-top:65px;
+	width:350px;
 	height:auto;
+	background-color: #0F6;
 	}
+#secNav1{
+	float: left;
+	margin-left:10%;
+}
+#secNav2{
+	float: right;
+	margin-right: 10%;
+}
 #barranavegacion a{
 	font-family:"miletra";
 	color: bisque;
@@ -82,6 +90,7 @@ h2{
 #barranavegacion #contenedor1{
 	display:block;
 	text-align:center;
+	width: 120%;
 	}
 #barranavegacion .boton1{
 	border-radius: 5px 20px 5px 10px;
