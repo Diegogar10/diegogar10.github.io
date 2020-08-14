@@ -24,6 +24,8 @@ $(document).ready(function(e) {
 			deslizaBarra(false);
 			}
 		flag=!flag;
+
+	
     });
 });
 
