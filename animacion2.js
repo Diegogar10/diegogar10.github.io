@@ -31,7 +31,7 @@ $(document).ready(function(e) {
 
 function deslizaBarra(flag){
 	if(flag){
-	$("#barranavegacion").animate({
+	$(".menu").animate({
 			
 				marginTop:"-50px",
 			
@@ -40,7 +40,7 @@ function deslizaBarra(flag){
 				//$(".animacion h2").fadeIn(1000).delay(1000).fadeOut(1000);
 				});
 	}else{
-		$("#barranavegacion").animate({
+		$(".menu").animate({
 			
 				marginTop:"-145px",
 			

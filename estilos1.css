@@ -1,7 +1,14 @@
 @charset "utf-8";
-body{
-	margin:0px;
-	padding:0px;}
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+#content-main{
+	background:url(Recursos/Texturas/cuadricula.png) repeat;
+	width: 100%;
+	height: 800px;
+	}
 
 #fondo{
  position: absolute;
@@ -9,10 +16,7 @@ body{
  /*bottom: 0px;*/
  right: 0px;
  width: 100%;
- height: auto;
  z-index: -1000;
- overflow: hidden;
- vertical-align: top;
  }
 
  
@@ -27,26 +31,55 @@ body{
 	}
 
 
-#barranavegacion{
+.menu{
 	margin-top:-145px;
 	background:rgba(1,35,60,0.8);
-	width:100%;
+	width:inherit;
 	height:175px;
-	border-radius:20px;}
-	
+	border-radius:20px;
+}
+
+.menu-content{
+	width: inherit;
+	display: flex;	
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	}
+
 @font-face{
 	font-family:"miletra";
-	src:url(Anurati.otf);}
+	src:url(Anurati.otf);
+}
 
 h2{
 	color:#A9E2CB;
 	position:fixed;
-	width:100%;
+	width:inherit;
+	left: 0;
+    right: 0;
 	text-align:center;
 	margin-top:50px;
 	font-family:"miletra";
 	background:#003;
 	}
+
+.menu-content__list1, .menu-content__list2{
+		margin:10px;
+		list-style: none;
+		width: 300px;
+		display: flex;
+		margin-top: 90px;
+	}
+
+.menu-content__list1{
+}
+
+.menu-content__list2{
+	}
+
+.menu-content__item{
+	width: 20%;
+}
 
 #nav{
 	position:absolute;
@@ -63,26 +96,8 @@ h2{
 	text-shadow:#0F6 0px 0px 5px ;
 	cursor:pointer;
 	}
-.contshare{
-	margin: 0px;
-	margin-top:65px;
-	width: 50%;
-	float: left;
 	
-	}	
-#secNav1, #secNav2{
-	margin:0px;
-	width:350px;
-	height:auto;
-}
-#secNav1{
-	float: right;
-	margin-right:15%;
-}
-#secNav2{
-	float: left;
-	margin-left: 15%;
-}
+
 #barranavegacion a{
 	font-family:"miletra";
 	color: bisque;
@@ -115,11 +130,5 @@ background-image: url(Recursos/1x/Recurso\ 4.png);
 	list-style: none;
 	}
 
-#principal{
-	margin: 0px;
-	padding:0px;
-	background:url(Recursos/Texturas/cuadricula.png) repeat;
-	width: 100%;
-	height: 800px;
-	}/* CSS Document */
+/* CSS Document */
 
