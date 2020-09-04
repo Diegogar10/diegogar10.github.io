@@ -5,7 +5,7 @@
 	margin: 0;
 }
 #content-main{
-	background:url(Recursos/Texturas/cuadricula.png) repeat;
+	background:url(../Recursos/Texturas/cuadricula.png) repeat;
 	width: 100%;
 	height: 800px;
 	}
@@ -33,7 +33,7 @@
 
 .menu{
 	margin-top:-145px;
-	background:rgba(1,35,60,1);
+	background:rgba(1,35,60,0.8);
 	width:inherit;
 	height:175px;
 	border-radius:20px;
@@ -51,6 +51,11 @@
 	src:url(Anurati.otf);
 }
 
+.menu-space{
+	width: 100%;
+    padding: 25px;
+}
+
 h2{
 	color:#A9E2CB;
 	position:fixed;
@@ -66,9 +71,10 @@ h2{
 .menu-content__list1, .menu-content__list2{
 		margin:10px;
 		list-style: none;
-		width: 300px;
+		width: 500px;
 		display: flex;
-		margin-top: 90px;
+		margin: 0;
+		justify-content: center;
 	}
 
 .menu-content__list1{
@@ -98,14 +104,6 @@ h2{
 	}
 	
 
-#barranavegacion a{
-	font-family:"miletra";
-	color: bisque;
-	position: relative;
-	top: 40px;
-	text-decoration:none;
-	padding: 20px;
-	}
 #barranavegacion #contenedor1{
 	display:block;
 	text-align:center;
