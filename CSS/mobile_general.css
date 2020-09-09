@@ -37,10 +37,11 @@ html{
 
 
 .menu{
-	margin-top:-145px;
+	position: relative;
+	margin-top:-225px;
 	background:rgba(1,35,60,0.8);
 	width:inherit;
-	min-height:175px;
+	min-height:260px;
 	border-radius:20px;
 }
 
@@ -83,20 +84,16 @@ h2{
 		justify-content: center;
 	}
 
-.menu-content__list1{
-}
 
-.menu-content__list2{
-	}
 
 .menu-content__item{
 	width: 20%;
 }
 
-#nav{
+.nav{
 	position:absolute;
+	top: 83%;
 	background:none;
-	top:-12px;
 	border:0px;
 	color:#0FF;
 	font:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
@@ -104,10 +101,11 @@ h2{
 	width:100px;
 	padding:0px;
 	}
-#nav:hover{
+.nav:hover{
 	text-shadow:#0F6 0px 0px 5px ;
 	cursor:pointer;
 	}
+
 	
 
 #barranavegacion #contenedor1{

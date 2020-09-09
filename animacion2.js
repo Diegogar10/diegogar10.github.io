@@ -1,27 +1,28 @@
 $(document).ready(function(e) {
 	var flag=false;
-    $("#nav").click(function(e) {
-        //console.log();
+    $(".nav").click(function(e) {
+        
 		if(!flag){
 			$(this).css({"font-size":"40px","border-color":"none"}).val("x").blur().animate({
 			
-				top:"80px",
+				
 			
 			},750,function(){//funcion anidada
 				
 				//$(".animacion h2").fadeIn(1000).delay(1000).fadeOut(1000);
 				});
-			deslizaBarra(true);
+				/*$(".menu").css("width") */
+			console.log($(".menu").css("width"));	
+			deslizaBarra1(true);
 		}else{
 			$(this).css({"font-size":"48px"}).val("=").blur().animate({
 			
-				top:"-12px",
-			
+					
 			},500,function(){//funcion anidada
 				
 				//$(".animacion h2").fadeIn(1000).delay(1000).fadeOut(1000);
 				});
-			deslizaBarra(false);
+			deslizaBarra1(false);
 			}
 		flag=!flag;
 
@@ -29,7 +30,7 @@ $(document).ready(function(e) {
     });
 });
 
-function deslizaBarra(flag){
+function deslizaBarra1(flag){
 	if(flag){
 	$(".menu").animate({
 			
@@ -41,8 +42,8 @@ function deslizaBarra(flag){
 				});
 	}else{
 		$(".menu").animate({
-			
-				marginTop:"-145px",
+
+				marginTop:"-225px",
 			
 			},500,function(){//funcion anidada
 				
