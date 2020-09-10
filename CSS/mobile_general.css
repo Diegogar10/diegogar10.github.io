@@ -25,11 +25,11 @@ html{
  }
 
  
-#logo{
+.logo{
 	position:fixed;
-	top:40px;
-	left:46%;
-	width:7%;
+	top:5%;
+	left:43%;
+	width:80px;
 	height:10%;
 	display:block;
 
@@ -38,7 +38,7 @@ html{
 
 .menu{
 	position: relative;
-	margin-top:-225px;
+	margin-top:-230px;
 	background:rgba(1,35,60,0.8);
 	width:inherit;
 	min-height:260px;
@@ -59,7 +59,7 @@ html{
 
 .menu-space{
 	width: 100%;
-    padding: 25px;
+    padding: 30px;
 }
 
 h2{

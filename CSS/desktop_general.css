@@ -25,7 +25,7 @@ html{
  }
 
  
-#logo{
+.logo{
 	position:fixed;
 	top:40px;
 	left:46%;
@@ -58,7 +58,7 @@ html{
 
 .menu-space{
 	width: 100%;
-    padding: 25px;
+    padding: 27px;
 }
 
 h2{
