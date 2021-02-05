@@ -12,6 +12,7 @@
 <link type="text/css" rel="stylesheet" href="./CSS/mobile_menu.css" media="screen and (min-width:320px)" />
 <link type="text/css" rel="stylesheet" href="./CSS/desktop_general.css" media="screen and (min-width:1000px)" />
 <link type="text/css" rel="stylesheet" href="./CSS/desktop_menu.css" media="screen and (min-width:1000px)" />
+<link type="text/css" rel="stylesheet" href="./CSS/desktop_menu_animacion.css" media="screen and (min-width:1000px)" />
 </head>
 
 <body>
@@ -26,17 +27,16 @@
 				<div class="menu-content">
 					<h2>Digital Form</h2>
 					<div class="menu-space">espacio</div>
-					<ul class="menu-content__list1">
-						<li class="menu_items"><a class="op1" href="#">Visión</a><span><font>Visión</font></span></li>
-						<li class="menu_items"><a class="op2" href="#">Misión</a><span><font>Misión</font></span></li>
-						<li class="menu_items"><a class="op3" href="#">Nosotros</a><span><font>Nosotros</font></span></li>   
-					</ul>
-				
-					<ul class="menu-content__list2">
-						<li class="menu_items"><a class="op1" href="#">Productos</a><span><font>Productos</font></span></li>
-						<li class="menu_items"><a class="op2" href="#">Servicios</a><span><font>Servicios</font></span></li>
-						<li class="menu_items"><a class="op3" href="#">Contacto</a><span><font>Contacto</font></span></li>
-					</ul>
+					<div class="menu-content__list1">
+						<div class="menu_items"><div class="menu_items--sombra"><a class="" href="#">Inicio</a></div></div> 
+						<div class="menu_items"><div class="menu_items--sombra"><a class="" href="#">Visión</a></div></div> 
+						<div class="menu_items"><div class="menu_items--sombra"><a class="" href="#">Misión</a></div></div> 
+					</div>
+					<div class="menu-content__list2">
+						<div class="menu_items"><div class="menu_items--sombra"><a class="" href="#">Servicios</a></div></div> 
+						<div class="menu_items"><div class="menu_items--sombra"><a class="" href="#">Proyectos</a></div></div> 
+						<div class="menu_items"><div class="menu_items--sombra"><a class="" href="#">Contacto</a></div></div> 
+					</div>
 				</div>
 				<input class="nav" type="button" value="=" />
 			</nav>
@@ -44,5 +44,7 @@
 	</div>
 	
 </body>
+
+<script src="./animacionBotones.js"></script>
 
 </html>
