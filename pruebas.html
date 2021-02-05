@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+/*          grid-template-columns: 20px 20px 20px 20px;
+            grid-template-rows: 20px 20px 20px; */
+            /* grid-template:30px 30px 30px/30px 30px 30px 30px; */
+            grid-template:repeat(3,minmax(20px,30px))/repeat(4,minmax(20px,30px)) ;
+            grid-template-areas:    "bot bot bot bot"
+                                    "bot bot bot bot"
+                                    "bot bot bot bot";
+        }
+        
+        
+        .container .boton{
+            display:grid;
+            border:rgba(44,181,232,0.8) transparent 1px;
+            position:relative;
+            background:-webkit-linear-gradient(45deg,rgba(159,184,173,0.1) ,rgba(44,181,232,0.1));
+            grid-template:repeat(3,1fr)/repeat(3,1fr) ;	
+            transition: 800ms all;
+        }
+        .boton{
+            border-radius:10px 10px 10px 25px;
+            /* background:-webkit-linear-gradient(45deg,rgba(159,184,173,0.2) ,rgba(44,181,232,0.2)); */
+            grid-area: bot;
+            
+            }
+        .boton:before{
+            content:'';
+            border-radius:10px 10px 10px 25px;
+            background:-webkit-linear-gradient(60deg,rgba(159,184,173,0) 0%,rgba(0,0,58,1) 35%, rgba(0,0,58,1) 55%,rgba(44,181,232,0) 100%);
+            position:absolute;
+	        top:-2px;
+	        left:-2px;
+	        bottom:-2px;
+            right:-2px;
+            z-index: -10;
+            }
+        .m1{
+            transform: translate3d(0px, 0px, 40px) rotateX(15.92deg) rotateY(-13.19deg);
+        }
+        .m2{
+            transform: translate3d(0px, 0px, 40px) rotateX(16.95deg) rotateY(-1.76deg);
+        }
+        .m3{
+            transform: translate3d(0px, 0px, 40px) rotateX(13.32deg) rotateY(15.62deg);
+        }
+       /*  .m4{
+            transform: translate3d(0px, 0px, 40px) rotateX(15.92deg) rotateY(-13.19deg);
+        }
+        .m5{
+            transform: translate3d(0px, 0px, 40px) rotateX(15.92deg) rotateY(-13.19deg);
+        }
+        .m6{
+            transform: translate3d(0px, 0px, 40px) rotateX(15.92deg) rotateY(-13.19deg);
+        }
+        .m7{
+            transform: translate3d(0px, 0px, 40px) rotateX(15.92deg) rotateY(-13.19deg);
+        }
+        .m8{
+            transform: translate3d(0px, 0px, 40px) rotateX(15.92deg) rotateY(-13.19deg);
+        }
+        .m9{
+            transform: translate3d(0px, 0px, 40px) rotateX(15.92deg) rotateY(-13.19deg);
+        } */
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <a class="boton" href="#">
+                    <div class="item" id="m1">1</div>
+                    <div class="item" id="m2">2</div>
+                    <div class="item" id="m3">3</div>
+                    <div class="item" id="m4">4</div>
+                    <div class="item" id="m5">5</div>
+                    <div class="item" id="m6">6</div>
+                    <div class="item" id="m7">7</div>
+                    <div class="item" id="m8">8</div>
+                    <div class="item" id="m9">9</div>
+                </a>
+            </div>
+        </nav>
+    </header>
+<script>
+    var i=document.querySelectorAll(".item");
+    var b=document.querySelector(".boton");
+    /* i.addEventListener("mouseover", modifyText, false); */
+    i.forEach(function(userItem) {
+        userItem.addEventListener("mouseover", modifyText, false);
+        
+    });
+    b.addEventListener("mouseout",modifyText2,false);
+    function modifyText(e){
+        /* console.log(typeof(e.fromElement.id)); */
+        b.className = "boton "+e.fromElement.id;
+    } 
+    function modifyText2(){
+        b.className = "boton";
+    } 
+</script>
+</body>
+</html>
