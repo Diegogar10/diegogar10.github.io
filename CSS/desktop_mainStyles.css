@@ -1,0 +1,27 @@
+.main-container{
+    width: 80%;
+    min-height: 90%;
+    margin: 0 auto;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.main-slogan{
+    width: 100%;
+    background-color: #a52a2a;
+}
+.main-section__shop{
+    width: 37%;
+    background-color: blueviolet;
+    
+}
+.main-section__services{
+    width: 25%;
+    background-color: white;
+    
+}
+.main-section__client{
+    width: 37%;
+    background-color: gray;
+
+}
