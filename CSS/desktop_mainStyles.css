@@ -1,3 +1,5 @@
+
+/*------------------Organizacion general de botones y estilos eslogan--------------*/
 .main-container{
     width: 80%;
     min-height: 80vh;
@@ -41,10 +43,9 @@
 
 }
 
-.main-section__shop{
+.main-section__corp{
     width: 37.5%;
     min-height: 50vh;
-    background-color: blueviolet;
     
 }
 .main-section__services{
@@ -58,4 +59,24 @@
     min-height: 50vh;
     background-color: gray;
 
+}
+
+
+/*------------------Organizacion y estilos de seccion corpotativo--------------*/
+
+.bottom-shop{
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border:rgba(44,181,232,0.8) solid 1px;
+    border-radius:10px 20px 10px 10px;
+    position:relative;
+    transition: 800ms all;
+    width: 350px;
+    height: 125px;
+    grid-area: bot;
+    /* overflow: visible; */
+    margin: 10px;
+   
 }
