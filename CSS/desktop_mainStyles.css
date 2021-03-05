@@ -1,6 +1,6 @@
 .main-container{
     width: 80%;
-    min-height: 90%;
+    min-height: 80vh;
     margin: 0 auto;
     display:flex;
     flex-direction: row;
@@ -8,20 +8,54 @@
 }
 .main-slogan{
     width: 100%;
-    background-color: #a52a2a;
+    max-height: 20vh;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-shadow: turquoise 0px 2px 8px;
 }
+
+
+.main-slogan .title-slogan{
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+    /* text-transform: uppercase; */
+    color: whitesmoke;
+    font-family: 'Akaya Telivigala', cursive;
+    font-weight: 100;
+    font-size: 2.4rem;
+    position: relative;
+}
+
+.title-slogan::before{
+    content: '';
+    position: absolute;
+    left: 45%;
+    right: 45%;
+    bottom: -10px;
+    border-bottom: rgb(228, 238, 237) solid 3px;
+    height: 0;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px rgb(184, 247, 255)
+
+}
+
 .main-section__shop{
-    width: 37%;
+    width: 37.5%;
+    min-height: 50vh;
     background-color: blueviolet;
     
 }
 .main-section__services{
     width: 25%;
+    min-height: 50vh;
     background-color: white;
     
 }
 .main-section__client{
-    width: 37%;
+    width: 37.5%;
+    min-height: 50vh;
     background-color: gray;
 
 }
