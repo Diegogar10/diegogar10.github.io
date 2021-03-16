@@ -2,7 +2,7 @@
 /*------------------Organizacion general de botones y estilos eslogan--------------*/
 .main-container{
     width: 80%;
-    min-height: 80vh;
+    min-height: 85vh;
     margin: 0 auto;
     display:flex;
     flex-direction: row;
@@ -13,7 +13,15 @@
     max-height: 20vh;
     position: relative;
     margin-top: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
+    text-shadow: turquoise 0px 2px 8px;
+}
+.main-slogan--retraicted{
+    width: 100%;
+    max-height: 10vh;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 0px;
     text-shadow: turquoise 0px 2px 8px;
 }
 
@@ -46,7 +54,10 @@
 .main-section__corp{
     width: 37.5%;
     min-height: 50vh;
-    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: center;
 }
 .main-section__services{
     width: 25%;
@@ -64,19 +75,37 @@
 
 /*------------------Organizacion y estilos de seccion corpotativo--------------*/
 
-.bottom-shop{
 
-    display:flex;
+.bottom-shop, .bottom-mision, .bottom-vision, .bottom-contact{
+    display: flex;
     justify-content: center;
     align-items: center;
-    border:rgba(44,181,232,0.8) solid 1px;
-    border-radius:10px 20px 10px 10px;
-    position:relative;
-    transition: 800ms all;
-    width: 350px;
-    height: 125px;
+    border:transparent solid 1px;
+    border-color: tomato blueviolet gold green;
     grid-area: bot;
-    /* overflow: visible; */
-    margin: 10px;
-   
+    
+}
+.bottom-shop{
+    /*rgba(44,181,232,0.8)*/
+    /* border-image: linear-gradient(to top, rgba(44,181,232,0.8) 0%, #3ad0d500 50%, #3a4fd55e 100%) 1; */
+    border-radius:10px 10px 10px 10px;
+    width: 80%;
+    height: 140px;
+    grid-area: bot;
+    
+}
+
+.bottom-mision, .bottom-vision{
+    border-radius:10px 10px 10px 10px;
+    width: 45%;
+    height: 150px;
+    grid-area: bot;
+
+}
+
+.bottom-contact{
+    border-radius:10px 10px 10px 20px;
+    width: 80%;
+    height: 50px;
+    grid-area: bot;
 }
