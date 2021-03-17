@@ -42,6 +42,7 @@ html{
 	width:inherit;
 	min-height:175px;
 	border-radius:20px;
+	transition: 1200ms;
 }
 .menu-desplegado1{
 	margin-top:-50px;
@@ -108,11 +109,16 @@ h2{
 	font-size:48px;
 	width:100px;
 	padding:0px;
+	
 	}
 .nav:hover{
 	text-shadow:#0F6 0px 0px 5px ;
 	cursor:pointer;
-	}
+	
+}
+.nav:focus{
+	outline: none;
+}
 
 	
 
