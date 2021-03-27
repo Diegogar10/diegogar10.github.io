@@ -69,13 +69,16 @@
 .main-section__services{
     width: 25%;
     min-height: 50vh;
-    background-color: white;
-    
+    display: flex;
+    flex-wrap: wrap;
 }
 .main-section__client{
     width: 37.5%;
     min-height: 50vh;
-    background-color: gray;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
 
 }
 
@@ -83,7 +86,8 @@
 /*------------------Organizacion y estilos de seccion corpotativo--------------*/
 
 
-.bottom-shop, .bottom-mision, .bottom-vision, .bottom-contact{
+.bottom-shop, .bottom-mision, .bottom-vision, .bottom-contact, .bottom-services, .bottom-projects, 
+.bottom-tutorial, .bottom-zone, .bottom-follow, .bottom-partner, .bottom-help{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,7 +96,7 @@
     grid-area: bot;
     
 }
-.bottom-shop{
+.bottom-shop, .bottom-zone{
     /*rgba(44,181,232,0.8)*/
     /* border-image: linear-gradient(to top, rgba(44,181,232,0.8) 0%, #3ad0d500 50%, #3a4fd55e 100%) 1; */
     border-radius:10px 10px 10px 10px;
@@ -102,7 +106,7 @@
     
 }
 
-.bottom-mision, .bottom-vision{
+.bottom-mision, .bottom-vision, .bottom-follow, .bottom-partner{
     border-radius:10px 10px 10px 10px;
     width: 45%;
     height: 150px;
@@ -110,9 +114,18 @@
 
 }
 
-.bottom-contact{
+.bottom-contact, .bottom-help{
     border-radius:10px 10px 10px 20px;
     width: 80%;
     height: 50px;
     grid-area: bot;
+}
+.bottom-services, .bottom-projects{
+    border-radius:10px 20px 10px 10px;
+    width: 100%;
+    
+}
+.bottom-tutorial{
+    border-radius:10px 10px 10px 20px;
+    width: 100%;
 }
