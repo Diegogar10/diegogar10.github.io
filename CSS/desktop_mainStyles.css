@@ -86,8 +86,18 @@
 /*------------------Organizacion y estilos de seccion corpotativo--------------*/
 
 
-.bottom-shop, .bottom-mision, .bottom-vision, .bottom-contact, .bottom-services, .bottom-projects, 
-.bottom-tutorial, .bottom-zone, .bottom-follow, .bottom-partner, .bottom-help{
+.bottom-mision, .bottom-vision, .bottom-contact, .bottom-services, .bottom-projects, 
+.bottom-tutorial, .bottom-follow, .bottom-partner, .bottom-help{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:transparent solid 1px;
+    border-color: tomato blueviolet gold green;
+    grid-area: bot;
+    margin: 5px 0px 5px 0px;
+    
+}
+.bottom-shop, .bottom-zone{
     display: flex;
     justify-content: center;
     align-items: center;
