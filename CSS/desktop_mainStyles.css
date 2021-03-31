@@ -98,6 +98,15 @@
     
 }
 .bottom-shop, .bottom-zone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:transparent solid 1px;
+    grid-area: bot;
+    margin: 5px 0px 5px 0px;
+    
+}
+.bottom-shop, .bottom-zone{
     /*rgba(44,181,232,0.8)*/
     /* border-image: linear-gradient(to top, rgba(44,181,232,0.8) 0%, #3ad0d500 50%, #3a4fd55e 100%) 1; */
     border-radius:10px 10px 10px 10px;
