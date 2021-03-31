@@ -92,6 +92,7 @@
     justify-content: center;
     align-items: center;
     border:transparent solid 1px;
+    border-color: tomato blueviolet gold green;
     grid-area: bot;
     margin: 5px 0px 5px 0px;
     
