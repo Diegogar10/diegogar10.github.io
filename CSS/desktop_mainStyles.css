@@ -92,8 +92,8 @@
     justify-content: center;
     align-items: center;
     border:transparent solid 1px;
-    border-color: tomato blueviolet gold green;
     grid-area: bot;
+    margin: 5px 0px 5px 0px;
     
 }
 .bottom-shop, .bottom-zone{
@@ -103,12 +103,19 @@
     width: 80%;
     height: 140px;
     grid-area: bot;
+    margin: 7px 14px 7px 14px;
+    background: url("../Recursos/Iconos\ SVG/RectanguloLateral.svg") no-repeat center;
     
 }
-
+.bottom-mision, .bottom-vision{
+    margin: 7px 14px 7px 0px;
+} 
+.bottom-follow, .bottom-partner{
+    margin: 7px 0px 7px 14px;
+}
 .bottom-mision, .bottom-vision, .bottom-follow, .bottom-partner{
     border-radius:10px 10px 10px 10px;
-    width: 45%;
+    width: 43%;
     height: 150px;
     grid-area: bot;
 
@@ -119,6 +126,7 @@
     width: 80%;
     height: 50px;
     grid-area: bot;
+    margin: 5px 10px 5px 10px;
 }
 .bottom-services, .bottom-projects{
     border-radius:10px 20px 10px 10px;
