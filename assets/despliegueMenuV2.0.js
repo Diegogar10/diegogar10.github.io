@@ -1,20 +1,23 @@
-function load(){
-    let botonmenu=document.querySelector(".nav");
+    
+const inicio = () => {
+    const botonmenu = document.querySelector(".nav");
+    botonmenu.onclick = ()=> efectoMenu(botonmenu);
+} 
+   
+function efectoMenu(botonmenu){
 
-    botonmenu.addEventListener("click",efectoMenu,false);
-}
-
-function efectoMenu(e){
-
-    let menu=document.querySelector(".menu");
-    let mainslogan=document.querySelector(".main-slogan");
-    let boton=e.target;
+    const menu=document.querySelector(".menu");
+    const mainslogan=document.querySelector(".main-slogan");
+    console.log(botonmenu.value);
 
     menu.classList.toggle("menu-desplegado1");
     mainslogan.classList.toggle("main-slogan--retraicted")
 
-    if(boton.value =='=')boton.value ='x';
-    else boton.value = '=';
+    let boton = botonmenu.value =='=';
     
+    (boton)
+        ? botonmenu.value = 'x'
+        : botonmenu.value = '=';
 }
-window.onload=load;
+
+inicio();
