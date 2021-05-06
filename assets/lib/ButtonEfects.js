@@ -1,24 +1,30 @@
 
 class BunttonsEfects{
 
-    constructor(button){
-        console.log(button);
+    constructor(myMap){
+        this.myMap=myMap;
+        this.regiterEvent();
+    }
+    
+    regiterEvent(){
+        this.myMap.forEach(this.logMapElements); 
+    }
+    
+    logMapElements(value, key, map) {
+        key.onmousemove = (e)=>mover(e);
+        key.onmouseout = (e) =>normalizar(e);
     }
 }
 
-export default BunttonsEfects;
-
-/* function eventoPrincipal(e){
-   
-    var maxWidth=e.target.clientWidth;
-    var maxHeight=e.target.clientHeight;
-    var valueX=e.offsetX;
-    var valueY=e.offsetY;
-    var ResultX=(-(18*100*valueY)/(50*maxHeight))+18;
-    var ResultY=((18*100*valueX)/(50*maxWidth))-18;
-    let item=e.srcElement;
-    let itemParent=e.srcElement.parentElement;
-    //console.log(ResultX+","+ResultY);
+const mover = (boton) => {
+    let maxWidth=boton.target.clientWidth;
+    let maxHeight=boton.target.clientHeight;
+    let valueX=boton.offsetX;
+    let valueY=boton.offsetY;
+    let ResultX=(-(18*100*valueY)/(50*maxHeight))+18;
+    let ResultY=((18*100*valueX)/(50*maxWidth))-18;
+    let item=boton.srcElement;
+    let itemParent=boton.srcElement.parentElement;
     if(true){
         itemParent.setAttribute("style", "transform: translate3d(0px, 0px, 40px) rotateX("+ResultX+"deg) rotateY("+ResultY+"deg);");
     }
@@ -28,9 +34,11 @@ export default BunttonsEfects;
     }
 }
 
-function eventoNormalizar(e){
-    let item=e.srcElement;
-    let itemParent=e.srcElement.parentElement;
+const normalizar = (boton)=>{
+    let item=boton.srcElement;
+    let itemParent=boton.srcElement.parentElement;
     itemParent.setAttribute("style", "transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg);");
     item.setAttribute("style",`background: linear-gradient(140deg, rgba(159,184,173,0) 0%, rgba(0,0,38,1) 50%, rgba(44,181,232,0) 100%);`);    
-} */
+}
+
+export default BunttonsEfects;

@@ -1,35 +1,33 @@
 import BunttonsEfects from './lib/ButtonEfects.js';
-
 const comenzar = () => {
     return new Promise((resolve,reject)=>{
         const botones=document.querySelectorAll(".menu_items");
         const sombras=document.querySelectorAll(".menu_items--sombra");
-        const myMap=new Map();
+        
         if(botones){
-            botones.forEach((boton,i)=>{
-                myMap.set(boton,sombras[i]);
-              }) 
-            resolve(myMap); 
+            const nodes={
+                botones,sombras
+            }
+            resolve(nodes); 
         }else {
             reject(new Error("Fallo el reconocimiento de propiedades de botones"));
         }
+        
     });
 }
-
-
-
-function logMapElements(value, key, map) {
-
-    //console.log(key.clientWidth);
-    
-    //key.onmouseover = () =>;
-    key.onmouseout = () => console.log('Gracias2!');
+class AnimacionBotones{
+    constructor(){
+        this.myMap = new Map();
+        this.cargar();
+    }
+    async cargar(){
+        this.elements = await comenzar();
+        this.elements.botones.forEach((boton,i)=>{
+            this.myMap.set(boton,this.elements.sombras[i]);
+        })
+        this.intance = new BunttonsEfects(this.myMap);         
+    }    
 }
 
-const cargar = async () => {
+const animacion = new AnimacionBotones();
 
-    const incializar = await comenzar();
-    incializar.forEach(logMapElements);
-
-}
-cargar();
