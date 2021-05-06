@@ -29,5 +29,28 @@ class AnimacionBotones{
     }    
 }
 
-const animacion = new AnimacionBotones();
+class FondoRandomBotones{
+    
+    constructor(){
+        this.botones=document.querySelectorAll('.boton-random');
+        this.fondos=['../Recursos/IconosSVG/centralOP1.svg',
+                    '../Recursos/IconosSVG/centralOP2.svg',
+                    '../Recursos/IconosSVG/centralOP3.svg',
+                    '../Recursos/IconosSVG/centralOP4.svg',
+                    '../Recursos/IconosSVG/centralOP5.svg'
+                    ];          
+    }
 
+    getImage(){
+        return this.fondos[Math.floor(Math.random()*this.fondos.length)];
+    }
+    setBackgroundImage(){
+        this.botones.forEach(()=>{
+            
+        })
+    }
+}
+
+const animacion = new AnimacionBotones();
+const fondoRandom = new FondoRandomBotones();
+console.log(fondoRandom.getImage());
