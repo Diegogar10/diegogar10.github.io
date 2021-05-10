@@ -33,19 +33,28 @@ class FondoRandomBotones{
     
     constructor(){
         this.botones=document.querySelectorAll('.boton-random');
-        this.fondos=['../Recursos/IconosSVG/centralOP1.svg',
+        /* this.fondos=['../Recursos/IconosSVG/centralOP1.svg',
                     '../Recursos/IconosSVG/centralOP2.svg',
                     '../Recursos/IconosSVG/centralOP3.svg',
                     '../Recursos/IconosSVG/centralOP4.svg',
                     '../Recursos/IconosSVG/centralOP5.svg'
+                    ];   */        
+        this.fondos=['tipo1',
+                    'tipo2',
+                    'tipo3',
+                    'tipo4',
+                    'tipo5'
                     ];          
     }
 
     getImage(){
         return this.fondos[Math.floor(Math.random()*this.fondos.length)];
     }
-    setBackgroundImage(){
-        this.botones.forEach(()=>{
+    setBackgroundImage(url){
+        this.botones.forEach((e)=>{
+            /* e.style.background=`url('${url}') no-repeat center`;
+            e.style.backgroundSize=`cover`; */
+            e.classList.add(this.getImage());
             
         })
     }
@@ -53,4 +62,5 @@ class FondoRandomBotones{
 
 const animacion = new AnimacionBotones();
 const fondoRandom = new FondoRandomBotones();
-console.log(fondoRandom.getImage());
+//console.log(fondoRandom.getImage());
+fondoRandom.setBackgroundImage();
