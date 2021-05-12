@@ -1,0 +1,27 @@
+{
+  "name": "digitalformsweb",
+  "version": "1.0.0",
+  "description": "Es la pagina oficial de Digital Forms ",
+  "main": "src/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Diegogar10/Diegogar10.github.io.git"
+  },
+  "keywords": [
+    "javascript",
+    "html",
+    "css",
+    "webpack",
+    "node",
+    "babel"
+  ],
+  "author": "Diego Garcia <diegogar92@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Diegogar10/Diegogar10.github.io/issues"
+  },
+  "homepage": "https://github.com/Diegogar10/Diegogar10.github.io#readme"
+}
