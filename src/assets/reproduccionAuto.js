@@ -7,10 +7,10 @@ const player = new MediaPlayer({el:video, plugins:[
     new AutoPlay()
 ]});
 
-  if('serviceWorker' in navigator){
+/*   if('serviceWorker' in navigator){
     navigator.serviceWorker.register('./sw.js').catch(error=>{
         console.log(error.message);
     });
-} 
+}  */
  
 
