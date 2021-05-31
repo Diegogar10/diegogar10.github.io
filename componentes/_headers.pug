@@ -1,0 +1,15 @@
+.mainContainer
+    video.mainContainer__fondo(loop) 
+        source(src="./src/assets/videos/videofondo.mp4", type="video/mp4")
+        source(src="./src/assets/videos/videofondo.mov", type="video/mov")
+    header.header 
+        img.header__logo(src="./src/assets/images/logo.png", alt="")
+        nav.menu 
+            .menu__container 
+                h2 Digital Form 
+                .menu__espacio espacio
+                .menu__list1 
+                    each titulo in titulos1
+                        +caja1(titulo)
+                    each titulo in titulos2
+                        +caja2(titulo)

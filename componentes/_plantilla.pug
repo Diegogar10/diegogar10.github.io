@@ -1,3 +1,19 @@
+-var titulos1 =["Home","Vision","Mision"]
+-var titulos2 =["Servicios","Proyectos","Contacto"]
+
+mixin caja1(titulo)
+    .menu__list1--items 
+        .items--sombras 
+            a(href="")= titulo 
+
+mixin caja2(titulo)
+    .menu__list2--items 
+        .items--sombras 
+            a(href="")= titulo 
+
 doctype html 
 html
-    include _head.pug
+    include _heads.pug
+    body 
+        include _headers.pug
+        block contenidos
