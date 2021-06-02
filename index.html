@@ -4,9 +4,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Web Site | DigitalForm</title>
     <script defer="defer" type="module" src="./assets/reproduccionAuto.js"></script>
-    <script defer="defer" src="./assets/animacionV2.js"></script>
+    <script defer="defer" type="module" src="./src/assets/index.js"></script>
     <script defer="defer" type="module" src="./assets/animationButtons.js"></script>
-    <link rel="stylesheet" href="./src/styles/general.css"/>
+    <link rel="stylesheet" href="./src/styles/generales.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap" rel="stylesheet"/>
   </head>
   <body> 
     <div class="mainContainer">
@@ -20,28 +22,53 @@
             <h2>Digital Form </h2>
             <div class="menu__espacio">espacio</div>
             <div class="menu__list1"> 
-              <div class="menu__list1--items"> 
+              <div class="menu__items"> 
                 <div class="items--sombras"> <a href="">Home</a></div>
               </div>
-              <div class="menu__list1--items"> 
+              <div class="menu__items"> 
                 <div class="items--sombras"> <a href="">Vision</a></div>
               </div>
-              <div class="menu__list1--items"> 
+              <div class="menu__items"> 
                 <div class="items--sombras"> <a href="">Mision</a></div>
               </div>
-              <div class="menu__list2--items"> 
+            </div>
+            <div class="menu__list2">
+              <div class="menu__items"> 
                 <div class="items--sombras"> <a href="">Servicios</a></div>
               </div>
-              <div class="menu__list2--items"> 
+              <div class="menu__items"> 
                 <div class="items--sombras"> <a href="">Proyectos</a></div>
               </div>
-              <div class="menu__list2--items"> 
+              <div class="menu__items"> 
                 <div class="items--sombras"> <a href="">Contacto</a></div>
               </div>
             </div>
           </div>
+          <input class="menu__button" type="button" value="="/>
         </nav>
       </header>
     </div>
+    <main class="mainContent">
+      <section class="mainContent__slogan">
+        <h2>¡Es hora de llevar tu idea a otro nivel!</h2>
+      </section>
+      <section class="mainContent__corp">
+        <button class="button--shop">¿Quieres Algo? </button>
+        <button class="button--mision">Nuestro Objetivo </button>
+        <button class="button--vision">Soñemos Juntos </button>
+        <button class="button--contact">Comunicate! </button>
+      </section>
+      <section class="mainContent__services">
+        <button class="button--services button--random">Servicios</button>
+        <button class="button--projects button--random">Proyectos</button>
+        <button class="button--tutorials button--random">Aprende más</button>
+      </section>
+      <section class="mainContent__client">
+        <button class="button--zone">Tu Zona </button>
+        <button class="button--follow">Siguenos </button>
+        <button class="button--partner">Aliados </button>
+        <button class="button--help">Ayuda!</button>
+      </section>
+    </main>
   </body>
 </html>

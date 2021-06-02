@@ -1,0 +1,168 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #e2eafa;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.mainContainer {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/images/cuadricula.png");
+  background-repeat: repeat;
+}
+.mainContainer .mainContainer__fondo {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1000;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.header__logo {
+  position: fixed;
+  top: 40px;
+  left: 46%;
+  width: 7%;
+  height: 10%;
+  display: block;
+}
+
+.menu {
+  position: relative;
+  margin-top: -145px;
+  background: rgba(1, 35, 60, 0.8);
+  width: inherit;
+  min-height: 175px;
+  border-radius: 20px;
+  -webkit-transition: 1200ms;
+  transition: 1200ms;
+}
+.menu__container {
+  width: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.menu__container h2 {
+  margin-top: 50px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: inherit;
+  text-align: center;
+  background: #003;
+  font-size: 2rem;
+}
+.menu__container .menu__espacio {
+  width: 100%;
+  padding: 27px;
+}
+.menu__container .menu__list1, .menu__container .menu__list2 {
+  list-style: none;
+  width: 500px;
+  min-height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.menu__container .menu__list1 .menu__items, .menu__container .menu__list2 .menu__items {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: rgba(44, 181, 232, 0.8) solid 2px;
+  position: relative;
+  -webkit-transition: 800ms all;
+  transition: 800ms all;
+  width: 105px;
+  height: 68px;
+  grid-area: bot;
+  margin: 10px;
+}
+.menu__container .menu__list1 .menu__items:nth-of-type(1), .menu__container .menu__list2 .menu__items:nth-of-type(1), .menu__container .menu__list1 .menu__items:nth-of-type(1) .items--sombras, .menu__container .menu__list2 .menu__items:nth-of-type(1) .items--sombras {
+  border-radius: 10px 10px 10px 25px;
+}
+.menu__container .menu__list1 .menu__items:nth-of-type(2), .menu__container .menu__list2 .menu__items:nth-of-type(2), .menu__container .menu__list1 .menu__items:nth-of-type(2) .items--sombras, .menu__container .menu__list2 .menu__items:nth-of-type(2) .items--sombras {
+  border-radius: 10px 10px 10px 10px;
+}
+.menu__container .menu__list1 .menu__items:nth-of-type(3), .menu__container .menu__list2 .menu__items:nth-of-type(3), .menu__container .menu__list1 .menu__items:nth-of-type(3) .items--sombras, .menu__container .menu__list2 .menu__items:nth-of-type(3) .items--sombras {
+  border-radius: 10px 25px 10px 10px;
+}
+.menu__container .menu__list1 .menu__items .items--sombras, .menu__container .menu__list2 .menu__items .items--sombras {
+  width: inherit;
+  height: inherit;
+  margin-left: -2px;
+  margin-top: -2px;
+  margin-right: -2px;
+  margin-bottom: -2px;
+  border-radius: 10px 10px 10px 25px;
+  background: linear-gradient(140deg, rgba(159, 184, 173, 0) 0%, #000026 50%, rgba(44, 181, 232, 0) 100%);
+  z-index: 10;
+}
+.menu__container .menu__list1 .menu__items .items--sombras a, .menu__container .menu__list2 .menu__items .items--sombras a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: inherit;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #e2eafa;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.menu__button {
+  position: absolute;
+  background: none;
+  top: 75%;
+  border: 0px;
+  color: #0ff;
+  font-size: 48px;
+  width: 100px;
+  padding: 0px;
+}
+.menu__button:hover {
+  text-shadow: #0f6 0px 0px 5px;
+  cursor: pointer;
+}
+
+.menu--desplegado {
+  margin-top: -50px;
+}

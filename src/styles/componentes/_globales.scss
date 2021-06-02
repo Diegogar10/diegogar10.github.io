@@ -1,0 +1,20 @@
+$Fuente-principal: 'Lato',sans-serif;
+$color-primario: rgb(226, 234, 250);
+$color-resalto:#0f6;
+$color-variacion1: #003;
+$color-variacion2: #0ff;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $Fuente-principal;
+    color: $color-primario;
+}
+
+html {
+	font-size: 62.5%;
+}
