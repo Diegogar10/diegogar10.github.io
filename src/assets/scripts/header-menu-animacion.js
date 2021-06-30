@@ -10,7 +10,7 @@ function efectoMenu(botonmenu){
     console.log(botonmenu.value);
 
     menu.classList.toggle("menu--desplegado");
-    mainslogan.classList.toggle("main--retraido")
+    mainslogan.classList.toggle("mainContent__slogan--retraido")
 
     let boton = botonmenu.value =='=';
     
