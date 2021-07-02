@@ -4,6 +4,21 @@ $color-resalto:#0f6;
 $color-variacion1: #003;
 $color-variacion2: #0ff;
 
+@mixin confGeneral {
+    min-height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+@mixin generalBotones {
+    color: aliceblue;
+    padding-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: transparent solid 1px;
+
+}
+
 * {
     box-sizing: border-box;
     margin: 0;

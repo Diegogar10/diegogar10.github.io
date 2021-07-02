@@ -44,4 +44,115 @@
         }
 
     }
+    &__corp {
+        width: 37.5%;
+        justify-content: flex-end;
+        align-content: center;
+        @include confGeneral;
+    }
+    &__services {
+        width: 25%;
+        @include confGeneral;
+        
+    }
+    &__client {
+        width: 37.5%;
+        justify-content: flex-start;
+        align-content: center;
+        @include confGeneral;
+
+    }
+}
+.button--shop {
+        border-radius: 10px 10px 10px 10px;
+        width: 80%;
+        height: 120px;
+        grid-area: bot;
+        background: url(../assets/images/RectanguloLateral.svg) no-repeat center;
+        position: relative;
+        @include generalBotones;
+
+        &::before {
+            content: '';
+            background-image: url(../assets/images/compra.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 30px;
+            position: absolute;
+            top: 0;
+            bottom: 20px;
+            right: 0;
+            left: 0;
+        }
+}
+.button--zone {
+    @extend .button--shop;
+    &::before {
+        background-image: none;
+    }
+}
+
+.button--mision {
+    border-radius: 10px 10px 10px 10px;
+    width: 43%;
+    height: 150px;
+    grid-area: bot;
+    background: url('../assets/images/centros.svg') no-repeat center;
+    @include generalBotones;
+}
+.button--vision,
+.button--follow,
+.button--partner {
+    @extend .button--mision;
+}
+
+.button--mision,
+.button--vision {
+    margin: 7px 14px 7px 0px;
+}
+
+.button--follow, 
+.button--partner {
+    margin: 7px 0px 7px 14px;
+}
+
+.button--contact {
+    border-radius: 10px 10px 10px 20px;
+    width: 80%;
+    height: 50px;
+    grid-area: bot;
+    margin: 5px 10px 5px 10px;
+    background: url('../assets/images/botonabajo.svg') no-repeat center;
+    @include generalBotones;
+    padding: 0;
+}
+
+.button--help {
+    @extend .button--contact;
+}
+
+.button--random {
+    width: 100%;
+    background: url('../assets/images/centralOP1.svg') no-repeat;
+    background-size: cover;
+    opacity: 0.75;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 2px;
+    @include generalBotones;
+    margin: 5px 0px 5px 0px;
+}
+
+.tipo1{
+    border-radius: 10px 10px 10px 10px;
+}
+.tipo2{
+    border-radius: 30px 10px 10px 10px;
+}
+.tipo3{
+    border-radius: 10px 30px 10px 10px;
+}
+.tipo4{
+    border-radius: 10px 10px 30px 10px;
+}
+.tipo5{
+    border-radius: 10px 10px 10px 30px;
 }

@@ -222,3 +222,175 @@ html {
   -webkit-box-shadow: 0px 0px 5px #b8f7ff;
           box-shadow: 0px 0px 5px #b8f7ff;
 }
+.mainContent__corp {
+  width: 37.5%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  min-height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.mainContent__services {
+  width: 25%;
+  min-height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.mainContent__client {
+  width: 37.5%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  min-height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.button--shop, .button--zone {
+  border-radius: 10px 10px 10px 10px;
+  width: 80%;
+  height: 120px;
+  grid-area: bot;
+  background: url(../assets/images/RectanguloLateral.svg) no-repeat center;
+  position: relative;
+  color: aliceblue;
+  padding-top: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: transparent solid 1px;
+}
+.button--shop::before, .button--zone::before {
+  content: "";
+  background-image: url(../assets/images/compra.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px;
+  position: absolute;
+  top: 0;
+  bottom: 20px;
+  right: 0;
+  left: 0;
+}
+
+.button--zone::before {
+  background-image: none;
+}
+
+.button--mision, .button--vision,
+.button--follow,
+.button--partner {
+  border-radius: 10px 10px 10px 10px;
+  width: 43%;
+  height: 150px;
+  grid-area: bot;
+  background: url("../assets/images/centros.svg") no-repeat center;
+  color: aliceblue;
+  padding-top: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: transparent solid 1px;
+}
+
+.button--mision,
+.button--follow,
+.button--partner,
+.button--vision {
+  margin: 7px 14px 7px 0px;
+}
+
+.button--follow,
+.button--partner {
+  margin: 7px 0px 7px 14px;
+}
+
+.button--contact, .button--help {
+  border-radius: 10px 10px 10px 20px;
+  width: 80%;
+  height: 50px;
+  grid-area: bot;
+  margin: 5px 10px 5px 10px;
+  background: url("../assets/images/botonabajo.svg") no-repeat center;
+  color: aliceblue;
+  padding-top: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: transparent solid 1px;
+  padding: 0;
+}
+
+.button--random {
+  width: 100%;
+  background: url("../assets/images/centralOP1.svg") no-repeat;
+  background-size: cover;
+  opacity: 0.75;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 2px;
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 2px;
+  color: aliceblue;
+  padding-top: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: transparent solid 1px;
+  margin: 5px 0px 5px 0px;
+}
+
+.tipo1 {
+  border-radius: 10px 10px 10px 10px;
+}
+
+.tipo2 {
+  border-radius: 30px 10px 10px 10px;
+}
+
+.tipo3 {
+  border-radius: 10px 30px 10px 10px;
+}
+
+.tipo4 {
+  border-radius: 10px 10px 30px 10px;
+}
+
+.tipo5 {
+  border-radius: 10px 10px 10px 30px;
+}
