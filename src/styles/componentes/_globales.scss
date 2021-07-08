@@ -1,6 +1,19 @@
+@font-face {
+    font-family: 'branding bold';
+    src: url(../assets/font/Branding.ttf);
+}
+@font-face {
+    font-family: 'Quicksand';
+    src: url(../assets/font/Quicksand.ttf);
+}
+
 $Fuente-principal: 'Lato',sans-serif;
-$color-primario: rgb(226, 234, 250);
+$Fuente-secundaria: 'branding bold', Arial;
+$Fuente-terciaria: 'Quicksand', Arial;
+$color-primario: rgb(201, 217, 250);
 $color-resalto:#0f6;
+$color-secundario: whitesmoke;
+$color-terciario: #45e3f1;
 $color-variacion1: #003;
 $color-variacion2: #0ff;
 
@@ -10,13 +23,29 @@ $color-variacion2: #0ff;
     flex-wrap: wrap;
 }
 @mixin generalBotones {
-    color: aliceblue;
+    font-family: $Fuente-terciaria;
+    font-size: 1.4rem;
+    font-weight: 200;
     padding-top: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
     border: transparent solid 1px;
+    color: $color-terciario;
+    text-shadow: 1px 1px 3px $color-secundario;
+}
 
+@mixin confIcons($url) {
+    content: '';
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+    position: absolute;
+    top: 0;
+    bottom: 20px;
+    right: 0;
+    left: 0;
 }
 
 * {

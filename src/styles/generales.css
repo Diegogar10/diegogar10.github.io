@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "branding bold";
+  src: url(../assets/font/Branding.ttf);
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url(../assets/font/Quicksand.ttf);
+}
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -7,7 +15,7 @@
 
 body {
   font-family: "Lato", sans-serif;
-  color: #e2eafa;
+  color: #c9d9fa;
 }
 
 html {
@@ -63,6 +71,8 @@ html {
       flex-wrap: wrap;
 }
 .menu__container h2 {
+  font-family: "branding bold";
+  font-size: 2.3rem;
   margin-top: 50px;
   position: fixed;
   left: 0;
@@ -70,7 +80,6 @@ html {
   width: inherit;
   text-align: center;
   background: #003;
-  font-size: 2rem;
 }
 .menu__container .menu__espacio {
   width: 100%;
@@ -109,7 +118,7 @@ html {
   width: 105px;
   height: 68px;
   grid-area: bot;
-  margin: 10px;
+  margin: 12px;
 }
 .menu__container .menu__list1 .menu__items:nth-of-type(1), .menu__container .menu__list2 .menu__items:nth-of-type(1), .menu__container .menu__list1 .menu__items:nth-of-type(1) .items--sombras, .menu__container .menu__list2 .menu__items:nth-of-type(1) .items--sombras {
   border-radius: 10px 10px 10px 25px;
@@ -132,6 +141,8 @@ html {
   z-index: 10;
 }
 .menu__container .menu__list1 .menu__items .items--sombras a, .menu__container .menu__list2 .menu__items .items--sombras a {
+  font-family: "branding bold";
+  font-size: 2.2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -142,7 +153,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #e2eafa;
+  color: #c9d9fa;
   font-weight: bold;
   font-size: 14px;
   text-decoration: none;
@@ -201,9 +212,10 @@ html {
 .mainContent__slogan h2 {
   position: absolute;
   text-align: center;
+  font-family: "branding bold";
   font-size: 2rem;
-  font-family: "Akaya Telivigala", cursive;
-  font-weight: 100;
+  font-weight: 50;
+  letter-spacing: 3px;
   width: inherit;
   left: 0;
   right: 0;
@@ -265,9 +277,11 @@ html {
   width: 80%;
   height: 120px;
   grid-area: bot;
-  background: url(../assets/images/RectanguloLateral.svg) no-repeat center;
+  background: url(../assets/images/main-button-top-background.svg) no-repeat center;
   position: relative;
-  color: aliceblue;
+  font-family: "Quicksand", Arial;
+  font-size: 1.4rem;
+  font-weight: 200;
   padding-top: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -279,10 +293,12 @@ html {
       -ms-flex-align: center;
           align-items: center;
   border: transparent solid 1px;
+  color: #45e3f1;
+  text-shadow: 1px 1px 3px whitesmoke;
 }
 .button--shop::before, .button--zone::before {
   content: "";
-  background-image: url(../assets/images/compra.svg);
+  background-image: url("../assets/images/main-button-shop.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 30px;
@@ -294,7 +310,16 @@ html {
 }
 
 .button--zone::before {
-  background-image: none;
+  content: "";
+  background-image: url("../assets/images/main-button-zone.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px;
+  position: absolute;
+  top: 0;
+  bottom: 20px;
+  right: 0;
+  left: 0;
 }
 
 .button--mision, .button--vision,
@@ -304,8 +329,11 @@ html {
   width: 43%;
   height: 150px;
   grid-area: bot;
-  background: url("../assets/images/centros.svg") no-repeat center;
-  color: aliceblue;
+  position: relative;
+  background: url("../assets/images/main-centro-buttons-background.svg") no-repeat center;
+  font-family: "Quicksand", Arial;
+  font-size: 1.4rem;
+  font-weight: 200;
   padding-top: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -317,6 +345,61 @@ html {
       -ms-flex-align: center;
           align-items: center;
   border: transparent solid 1px;
+  color: #45e3f1;
+  text-shadow: 1px 1px 3px whitesmoke;
+}
+.button--mision::before, .button--vision::before,
+.button--follow::before,
+.button--partner::before {
+  content: "";
+  background-image: url("../assets/images/main-button-mision.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px;
+  position: absolute;
+  top: 0;
+  bottom: 20px;
+  right: 0;
+  left: 0;
+}
+
+.button--vision::before {
+  content: "";
+  background-image: url("../assets/images/main-button-vision.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px;
+  position: absolute;
+  top: 0;
+  bottom: 20px;
+  right: 0;
+  left: 0;
+}
+
+.button--follow::before {
+  content: "";
+  background-image: url("../assets/images/main-button-follow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px;
+  position: absolute;
+  top: 0;
+  bottom: 20px;
+  right: 0;
+  left: 0;
+}
+
+.button--partner::before {
+  content: "";
+  background-image: url("../assets/images/main-button-partner.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px;
+  position: absolute;
+  top: 0;
+  bottom: 20px;
+  right: 0;
+  left: 0;
 }
 
 .button--mision,
@@ -337,8 +420,10 @@ html {
   height: 50px;
   grid-area: bot;
   margin: 5px 10px 5px 10px;
-  background: url("../assets/images/botonabajo.svg") no-repeat center;
-  color: aliceblue;
+  background: url("../assets/images/main-bottom-buttons-background.svg") no-repeat center;
+  font-family: "Quicksand", Arial;
+  font-size: 1.4rem;
+  font-weight: 200;
   padding-top: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -350,17 +435,21 @@ html {
       -ms-flex-align: center;
           align-items: center;
   border: transparent solid 1px;
+  color: #45e3f1;
+  text-shadow: 1px 1px 3px whitesmoke;
   padding: 0;
 }
 
 .button--random {
   width: 100%;
-  background: url("../assets/images/centralOP1.svg") no-repeat;
+  background: url("../assets/images/main-centrals-buttons-background.svg") no-repeat;
   background-size: cover;
   opacity: 0.75;
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 2px;
           box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 2px;
-  color: aliceblue;
+  font-family: "Quicksand", Arial;
+  font-size: 1.4rem;
+  font-weight: 200;
   padding-top: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -372,6 +461,14 @@ html {
       -ms-flex-align: center;
           align-items: center;
   border: transparent solid 1px;
+  color: #45e3f1;
+  text-shadow: 1px 1px 3px whitesmoke;
+  color: whitesmoke;
+  font-family: "branding bold", Arial;
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 5px #003;
+  padding: 0;
   margin: 5px 0px 5px 0px;
 }
 

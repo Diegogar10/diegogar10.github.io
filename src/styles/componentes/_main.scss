@@ -21,13 +21,14 @@
         h2 {
             position: absolute;
             text-align: center;
-            font-size: 2rem;    
-            font-family: 'Akaya Telivigala', cursive;
-            font-weight: 100;
+            font-family: 'branding bold';
+            font-size: 2rem;
+            font-weight: 50;
+            letter-spacing: 3px;
             width: inherit;
             left: 0;
             right: 0;
-            color: whitesmoke;
+            color: $color-secundario;
             background-color: transparent;
             
             &::before {
@@ -68,27 +69,18 @@
         width: 80%;
         height: 120px;
         grid-area: bot;
-        background: url(../assets/images/RectanguloLateral.svg) no-repeat center;
+        background: url(../assets/images/main-button-top-background.svg) no-repeat center;
         position: relative;
         @include generalBotones;
 
         &::before {
-            content: '';
-            background-image: url(../assets/images/compra.svg);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: 30px;
-            position: absolute;
-            top: 0;
-            bottom: 20px;
-            right: 0;
-            left: 0;
+            @include confIcons('../assets/images/main-button-shop.svg');
         }
 }
 .button--zone {
     @extend .button--shop;
     &::before {
-        background-image: none;
+        @include confIcons('../assets/images/main-button-zone.svg');
     }
 }
 
@@ -97,13 +89,34 @@
     width: 43%;
     height: 150px;
     grid-area: bot;
-    background: url('../assets/images/centros.svg') no-repeat center;
+    position: relative;
+    background: url('../assets/images/main-centro-buttons-background.svg') no-repeat center;
     @include generalBotones;
+    &::before {
+        @include confIcons('../assets/images/main-button-mision.svg');
+    }
 }
+
 .button--vision,
 .button--follow,
 .button--partner {
     @extend .button--mision;
+}
+
+.button--vision {
+    &::before {
+        @include confIcons('../assets/images/main-button-vision.svg');
+    }
+}
+.button--follow {
+    &::before {
+        @include confIcons('../assets/images/main-button-follow.svg');
+    }
+}
+.button--partner {
+    &::before {
+        @include confIcons('../assets/images/main-button-partner.svg');
+    }
 }
 
 .button--mision,
@@ -122,7 +135,7 @@
     height: 50px;
     grid-area: bot;
     margin: 5px 10px 5px 10px;
-    background: url('../assets/images/botonabajo.svg') no-repeat center;
+    background: url('../assets/images/main-bottom-buttons-background.svg') no-repeat center;
     @include generalBotones;
     padding: 0;
 }
@@ -133,11 +146,17 @@
 
 .button--random {
     width: 100%;
-    background: url('../assets/images/centralOP1.svg') no-repeat;
+    background: url('../assets/images/main-centrals-buttons-background.svg') no-repeat;
     background-size: cover;
     opacity: 0.75;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 2px;
     @include generalBotones;
+    color: $color-secundario;
+    font-family: $Fuente-secundaria;
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 5px $color-variacion1;
+    padding: 0;
     margin: 5px 0px 5px 0px;
 }
 
