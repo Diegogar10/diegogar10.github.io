@@ -175,3 +175,9 @@
 .tipo5{
     border-radius: 10px 10px 10px 30px;
 }
+.mainContent {
+    perspective: 500px;
+}
+.mainContent button{
+    transition: all 1s;
+}

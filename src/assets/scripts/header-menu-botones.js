@@ -15,7 +15,7 @@ const comenzar = () => {
         
     });
 }
-class AnimacionBotones{
+class AnimarBotonesMenu {
     constructor(){
         this.myMap = new Map();
         this.cargar();
@@ -30,5 +30,5 @@ class AnimacionBotones{
 }
 
 
-export default AnimacionBotones;
+export default AnimarBotonesMenu;
 

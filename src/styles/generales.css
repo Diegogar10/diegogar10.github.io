@@ -491,3 +491,13 @@ html {
 .tipo5 {
   border-radius: 10px 10px 10px 30px;
 }
+
+.mainContent {
+  -webkit-perspective: 500px;
+          perspective: 500px;
+}
+
+.mainContent button {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
