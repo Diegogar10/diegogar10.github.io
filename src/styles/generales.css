@@ -99,6 +99,8 @@ html {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  -webkit-perspective: 800px;
+          perspective: 800px;
 }
 .menu__container .menu__list1 .menu__items, .menu__container .menu__list2 .menu__items {
   position: relative;
@@ -241,6 +243,8 @@ html {
           justify-content: flex-end;
   -ms-flex-line-pack: center;
       align-content: center;
+  -webkit-perspective: 500px;
+          perspective: 500px;
   min-height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -250,6 +254,8 @@ html {
 }
 .mainContent__services {
   width: 25%;
+  -webkit-perspective: 500px;
+          perspective: 500px;
   min-height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -264,6 +270,8 @@ html {
           justify-content: flex-start;
   -ms-flex-line-pack: center;
       align-content: center;
+  -webkit-perspective: 500px;
+          perspective: 500px;
   min-height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -490,11 +498,6 @@ html {
 
 .tipo5 {
   border-radius: 10px 10px 10px 30px;
-}
-
-.mainContent {
-  -webkit-perspective: 500px;
-          perspective: 500px;
 }
 
 .mainContent button {
