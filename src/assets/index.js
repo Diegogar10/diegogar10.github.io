@@ -1,4 +1,4 @@
-import '../styles/generales.css';
+import '../styles/generales.scss';
 import reproducion from './reproduccionAuto.js';
 import inicio from './scripts/header-menu-animacion.js';
 import AnimarBotonesMenu from './scripts/header-menu-botones.js';
