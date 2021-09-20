@@ -209,6 +209,7 @@ html {
   text-shadow: turquoise 0px 2px 8px;
   -webkit-transition: all 1200ms;
   transition: all 1200ms;
+  z-index: -1;
 }
 .mainContent__slogan--retraido {
   -webkit-transform: translateY(12px);
@@ -506,4 +507,10 @@ html {
 .mainContent button {
   -webkit-transition: all 1s;
   transition: all 1s;
+}
+
+@media screen and (max-width: 1024px) {
+  .menu__container .menu__list1, .menu__container .menu__list2 {
+    width: 350px;
+  }
 }
