@@ -47,6 +47,7 @@ html {
   width: 7%;
   height: 10%;
   display: block;
+  z-index: 1;
 }
 
 .menu {
@@ -177,7 +178,8 @@ html {
 }
 
 .menu--desplegado {
-  margin-top: -50px;
+  -webkit-transform: translateY(95px);
+          transform: translateY(95px);
 }
 
 .mainContent {
@@ -209,7 +211,8 @@ html {
   transition: all 1200ms;
 }
 .mainContent__slogan--retraido {
-  height: 5vh;
+  -webkit-transform: translateY(12px);
+          transform: translateY(12px);
 }
 .mainContent__slogan h2 {
   position: absolute;

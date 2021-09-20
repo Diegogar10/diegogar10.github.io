@@ -13,6 +13,7 @@
         align-items: flex-end;
         text-shadow: turquoise 0px 2px 8px;
         transition: all 1200ms;
+        z-index: -1;
 
         &--retraido {
             transform: translateY(12px);

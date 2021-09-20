@@ -1,4 +1,5 @@
 import '../styles/generales.scss';
+import '../assets/videos/videofondo.mp4';
 import reproducion from './reproduccionAuto.js';
 import inicio from './scripts/header-menu-animacion.js';
 import AnimarBotonesMenu from './scripts/header-menu-botones.js';
