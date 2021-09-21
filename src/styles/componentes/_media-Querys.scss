@@ -46,11 +46,16 @@
     }
 
     .button--random {
-        font-size: 2.0rem;
+        font-size: 1.8rem;
     }
 }
 
 @media screen and (max-width:768px){
+    .header__logo {
+        left: 43%;
+        width: 80px;
+    }
+    
     .menu {
         background: none;
         border-radius: 0px;
@@ -114,38 +119,74 @@
         background:rgba(1,35,60,0.8);;
     }
     
-
-
-
     .mainContent {
+        
         width: 100%;
         min-height: 80vh;
+        justify-content: center;
         
         &__slogan {
-            z-index: -1;
-            
-            &--retraido {
-                transform: translateY(-13px);
-            }
-            
+            z-index: 1;
+            width: 65%;
+            align-items: center;
+                        
             h2 {
                 font-size: 1.6rem;
+                display: block;
+                margin: 0 auto;
             }
     
         }
 
+        &__corp {
+            width: 35.1%;
+        }
         &__services {
-            max-height: 60vh;
-            padding: 10px;
+            width: 29.5%;
+        }
+        &__client {
+            width: 35.1%;
+        }
+    }
+
+    .button--shop {
+        font-size: 1.2rem;
+        height: 110px;
+        width: 90%;
+        &::before {
+            font-size: 10px;
+        }
+    }
+
+    .button--mision {
+        font-size: 1.2rem;
+        height: 75px;
+        width: 65%;
+        &::before {
+            font-size: 10px;
+        }
+    } 
+
+    .button--contact {
+        font-size: 1.2rem;
+        height: 50px;
+        width: 95%;
+        &::before {
+            font-size: 10px;
         }
     }
 
     .button--random {
         font-size: 2.0rem;
     }
+
+    
     
 }
 
-@media(max-width:320px){
-    
+@media screen and (max-width:475px){
+    .header__logo {
+        left: 40%;
+        width: 80px;
+    }
 }
