@@ -185,8 +185,73 @@
 }
 
 @media screen and (max-width:475px){
+    .menu {
+        &__container {
+            .menu__list1 {
+                width: 100%;
+            }
+        }
+    }
+    
     .header__logo {
         left: 40%;
         width: 80px;
+        top: 30px;
+    }
+    .mainContent {
+        
+        width: 100%;
+        min-height: 80vh;
+        justify-content: center;
+        
+        &__slogan {
+            z-index: 1;
+            width: 65%;
+            align-items: center;
+            height: 10vh;            
+            
+            h2 {
+                font-size: 1.6rem;
+                display: block;
+                margin: 0 auto;
+            }
+    
+        }
+
+        &__corp {
+            flex-direction: row;
+            width: 100%;
+            min-height: 25vh;
+        }
+        &__services {
+            flex-direction: row;
+            width: 100%;
+            min-height: 18vh;
+        }
+        &__client {
+            flex-direction: row;
+            width: 100%;
+            min-height: 25vh;
+        }
+    }
+
+    .button--shop {
+        @include configBotones320px;
+        background: url('../assets/images/main-centro-buttons-background.svg') no-repeat 50%;
+    }
+    
+    .button--mision {
+        @include configBotones320px;
+    } 
+
+    .button--contact {
+        height: 40px;
+        
+    }
+
+    .button--random {
+        width: 30%;
+        margin: 5px;
+        font-size: 1.5rem;
     }
 }
